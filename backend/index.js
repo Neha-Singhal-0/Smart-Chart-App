@@ -25,7 +25,7 @@ app.use(cookieParser());
 //   })
 // );
 const allowedOrigins = [
-  "http://localhost:3000", // local development
+  "http://localhost:5173", // local development
   // "https://smart-chat-jet.vercel.app"           // deployed frontend
 ];
 
