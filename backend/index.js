@@ -18,12 +18,15 @@ const __dirname = path.resolve();
 
 app.use(express.json());
 app.use(cookieParser());
-// app.use(
-//   cors({
-//     origin: "http://localhost:5173",
-//     credentials: true,
-//   })
-// );
+app.use(
+  cors({
+    origin: [
+      "https://smart-chart-app-neha-singhals-projects.vercel.app", // frontend on Vercel
+      "http://localhost:5173", // local frontend
+    ],
+    credentials: true,
+  })
+);
 const allowedOrigins = [
   "https://smart-chart-app-neha-singhals-projects.vercel.app/", // local development
   // "https://smart-chat-jet.vercel.app"           // deployed frontend
