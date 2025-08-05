@@ -25,7 +25,7 @@ app.use(cookieParser());
 //   })
 // );
 const allowedOrigins = [
-  "https://smart-chart-app-neha-singhals-projects.vercel.app/", // local development
+  "http://localhost:3000", // local development
   // "https://smart-chat-jet.vercel.app"           // deployed frontend
 ];
 
